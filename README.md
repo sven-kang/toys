@@ -6,4 +6,4 @@ Fun toy projects meant to be experimental. Be creative, playful and free. These 
 - [portfolio](#portfolio)
 
 ## Portfolio
-Lets build a test portfolio site! [Learn more](https://github.com/svenkang/toys/portfolio)  
+Lets build a test portfolio site! [Learn more](https://github.com/svenkang/toys/tree/main/portfolio)  
