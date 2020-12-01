@@ -1,3 +1,3 @@
 # Portfolio 
 
-Lets build a fun portfolio site! 😎
+Lets build a fun portfolio site!
