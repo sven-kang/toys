@@ -1,213 +1,93 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>Sven Kang - Software Engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Batman's Portfolio</title>
-    <meta
-      name="description"
-      content="Portfolio site of the one and only Batman!"
-    />
-    <meta name="author" content="Batman" />
-    <link rel="icon" type="image/svg" href="asset/image/batman-logo.svg" />
-    <link rel="stylesheet" href="asset/css/style.css" />
+    <meta name="author" content="Sven Kang" />
+    <meta name="description" content="This is Sven Kang's portfolio." />
+    <link rel="icon" type="image/svg" href="assets/imgs/logo.svg" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <script
+      defer
       src="https://kit.fontawesome.com/c1cb547d03.js"
       crossorigin="anonymous"
     ></script>
-    <script defer src="asset/js/main.js"></script>
+    <script defer src="assets/js/main.js"></script>
   </head>
   <body>
-    <!-- nav -->
-    <nav>
-      <div class="logo">
-        <img
-          src="asset/image/batman-logo.svg"
-          alt="batman-logo"
-          class="logo__icon"
-        />
-        <span class="logo__title">Batman</span>
-      </div>
-      <ul class="menu">
-        <li class="menu__item">Home</li>
-        <li class="menu__item">About</li>
-        <li class="menu__item">Skills</li>
-        <li class="menu__item">My Work</li>
-        <li class="menu__item">Testimonial</li>
-        <li class="menu__item">Contact</li>
-      </ul>
-    </nav>
-    <!-- home -->
+    <!-- Navigation -->
+    <header>
+      <nav>
+        <div class="logo">
+          <img class="logo__action" alt="Home" src="assets/imgs/logo.svg" />
+        </div>
+        <ul class="menu">
+          <li class="menu__action">Career</li>
+          <li class="menu__action">Skills</li>
+          <li class="menu__action">Projects</li>
+          <li class="menu__action">Blogs</li>
+          <li class="menu__action">Contacts</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home -->
     <section class="home">
-      <div class="hero">
-        <h1 class="hero__title">Hello, I am Bruce Wayne</h1>
-        <h2 class="hero__subtitle">
-          A rich guy who inherited a fortune from his parents and wants to play
-          justice
-        </h2>
-        <button class="hero__button">CONTACT ME</button>
-      </div>
-    </section>
-    <!-- aboutme -->
-    <section class="aboutme">
-      <h1 class="section-title">About Me</h1>
-      <p class="section-content">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, esse
-        non deserunt quos quis, ad ab saepe earum molestias dolor laboriosam
-        corporis repellat quibusdam fuga est officia totam aliquid voluptas.
+      <h1 class="home__title">Sven Kang</h1>
+      <h2 class="home__subtitle">Software Engineer</h2>
+      <p class="home__description">
+        Create designs, systems, and businesses out of this world
       </p>
-      <div class="details">
-        <div class="domain">
-          <i class="fas fa-balance-scale domain__icon"></i>
-          <h3 class="domain__title">Justice</h3>
-          <p class="domain__content">
-            Finding and catching bad guys, disarming them and exposing them so
-            that they can be locked up by the friendly cops. Never kill under
-            any circumstance.
-          </p>
-        </div>
-        <div class="domain">
-          <i class="fas fas fa-money-bill-wave domain__icon"></i>
-          <h3 class="domain__title">Fortune</h3>
-          <p class="domain__content">
-            Own so much wealth that it money is never a problem. Always have
-            money to break things, buy things, and invest in research for
-            private weapons development so I stay safe and high tech.
-          </p>
-        </div>
-      </div>
-      <div class="domain">
-        <i class="fas fa-atom domain__icon"></i>
-        <h3 class="domain__title">Charisma</h3>
-        <p class="domain__content">
-          Deadly charisma that will blow everyone away. So much charisma that my
-          voice sounds like I smoked since I was able to walk.
-        </p>
-      </div>
+      <button class="home__action">
+        Learn more <i class="home__action-icon fas fa-chevron-down"></i>
+      </button>
     </section>
-    <!-- employment -->
-    <section class="employment">
-      <div class="work-history">
-        <i class="fas fa-city work-history__icon"></i>
-        <p class="work-history__description">
-          Currently employed at Gotham PD as Side Kick
-        </p>
-        <p class="work-history__date">2019 Sept - Until now</p>
+
+    <!-- Career-->
+    <section class="career">
+      <div class="career__description">
+        <h3>
+          <span class="career__emphasis">Key contributor </span><br />
+          in fast growing startups
+        </h3>
       </div>
-      <div class="work-history">
-        <i class="fas fa-city work-history__icon"></i>
-        <p class="work-history__description">
-          Currently employed at Gotham PD as Head of Vigilante
-        </p>
-        <p class="work-history__date">2020 Jan - Until now</p>
-      </div>
-    </section>
-    <!-- skills -->
-    <section class="skills">
-      <h1 class="section__title">Skills</h1>
-      <h2 class="section__subtitle">Skills & Attributes</h2>
-      <p class="section__content">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis maiores
-        iure deleniti obcaecati aliquid illo, laudantium voluptatem praesentium
-        maxime molestiae aperiam voluptatum et laboriosam quibusdam reiciendis
-        libero eveniet! Quidem, pariatur!
-      </p>
-      <div class="skill-container">
-        <div class="skill-bar-container">
-          <h3 class="skill-bar-container__header">Skills</h3>
-          <p class="skill-bar-contanier__item">HTML</p>
-          <p class="skill-bar-container__percentage">99%</p>
-          <div class="skill-bar-container__bar"></div>
-          <div class="skill-bar-container__value"></div>
-          <p class="skill-bar-contanier__item">CSS</p>
-          <p class="skill-bar-container__percentage">90%</p>
-          <div class="skill-bar-container__bar"></div>
-          <div class="skill-bar-container__value"></div>
-          <p class="skill-bar-contanier__item">JS</p>
-          <p class="skill-bar-container__percentage">90%</p>
-          <div class="skill-bar-container__bar"></div>
-          <div class="skill-bar-container__value"></div>
-          <p class="skill-bar-contanier__item">Node</p>
-          <p class="skill-bar-container__percentage">80%</p>
-          <div class="skill-bar-container__bar"></div>
-          <div class="skill-bar-container__value"></div>
+      <div class="slideshow">
+        <div class="slideshow__card">
+          <img
+            id="nagios-logo"
+            src="assets/imgs/nagios-logo.svg"
+            alt="Nagios"
+            class="slideshow__card_logo"
+          />
         </div>
-        <div class="tool-container">
-          <h3 class="tool-header">Tools</h3>
-          <ul class="tool-list">
-            <li class="tool">VS Code</li>
-            <li class="tool">VIM</li>
-          </ul>
+        <div class="slideshow__card_dot"></div>
+        <div class="slideshow__card_dot dot-medium"></div>
+        <div class="slideshow__card_dot dot-highlight"></div>
+        <div class="slideshow__card">
+          <img
+            id="relevant-logo"
+            src="assets/imgs/relevant-logo.svg"
+            alt="Relevant Systems"
+            class="slideshow__card_logo"
+          />
         </div>
-        <div class="etc-container">
-          <h3 class="etc-header">Etc</h3>
-          <ul class="etc-list">
-            <li class="etc">Git</li>
-          </ul>
+        <div class="slideshow__card_dot"></div>
+        <div class="slideshow__card_dot dot-medium"></div>
+        <div class="slideshow__card_dot dot-highlight"></div>
+        <div class="slideshow__card">
+          <img
+            id="fieldnation-logo"
+            src="assets/imgs/fieldnation-logo.svg"
+            alt="Field Nation"
+            class="slideshow__card_logo"
+          />
         </div>
+        <div class="slideshow__card_dot"></div>
+        <div class="slideshow__card_dot dot-medium"></div>
+        <div class="slideshow__card_dot dot-highlight"></div>
+        <div class="slideshow__card-empty"></div>
       </div>
-    </section>
-    <!-- my work -->
-    <section class="mywork">
-      <div class="mywork-button-group">
-        <button class="mywork-button">All</button>
-        <button class="mywork-button">Front-end</button>
-        <button class="mywork-button">Mobile</button>
-        <button class="mywork-button">Back-end</button>
-      </div>
-      <div class="work">
-        <img src="" alt="karaoke app" class="work__image" />
-      </div>
-      <div class="work">
-        <img src="" alt="bus app" class="work__image" />
-      </div>
-      <div class="work">
-        <img src="" alt="cron app" class="work__image" />
-      </div>
-      <div class="work">
-        <img src="" alt="inventory app" class="work__image" />
-      </div>
-      <div class="work">
-        <img src="" alt="scheduler app" class="work__image" />
-      </div>
-    </section>
-    <!-- testimonial -->
-    <section class="testimonials">
-      <h1 class="section-title"></h1>
-      <p class="section-content"></p>
-      <div class="quote-card">
-        <div class="quote-card__profile"></div>
-        <div class="quote-card__message">
-          <div class="quote-card__content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            autem numquam fugit eos velit animi cum est, eius ex itaque
-            recusandae vel ab excepturi! Corporis velit similique animi
-            veritatis maiores.
-          </div>
-          <div class="quote-card__author">Ellie / Tiger Spike</div>
-        </div>
-      </div>
-      <div class="quote-card">
-        <div class="quote-card__profile"></div>
-        <div class="quote-card__message">
-          <div class="quote-card__content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            autem numquam fugit eos velit animi cum est, eius ex itaque
-            recusandae vel ab excepturi! Corporis velit similique animi
-            veritatis maiores.
-          </div>
-          <div class="quote-card__author">Ellie / Tiger Spike</div>
-        </div>
-      </div>
-    </section>
-    <!-- contact -->
-    <section class="contact">
-      <h1 class="contact__header">Let's talk</h1>
-      <h2 class="contact__email">sven.c.kang@gmail.com</h2>
-      <i class="contact__icon"></i>
-      <i class="contact__icon"></i>
-      <p class="rights-reserved">
-        2020 Batman Incorporated - All rights reserved
-      </p>
     </section>
   </body>
 </html>

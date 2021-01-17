@@ -1,0 +1,263 @@
+/* Custom Font */
+@font-face {
+  font-family: "averta-regular";
+  src: url("../fonts/averta-regular-webfont.woff2") format("woff2"),
+    url("../fonts/averta-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Root */
+:root {
+  /* Colors */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-shade: #9b9dad;
+  --color-light-shade: #e5e5ec;
+  --color-shade-background: #091724;
+  --color-extra-light-background: #5e646e;
+  --color-light-background: #30363f;
+  --color-soft-background: #202833;
+  --color-strong-background: #141E27;
+  --color-light-accent: #9effff;
+  --color-primary-accent: #64ffda;
+  --color-dark-accent: #14cba8;
+  --color-extra-dark-accent: #0b6151;
+
+  /* Fonts */
+  font-size: 12px;
+  color: var(--color-black);
+  font-family: "averta-regular";
+  --font-size-extra-extra-large: 10rem;
+  --font-size-extra-large: 6rem;
+  --font-size-large: 4rem;
+  --font-size-regular: 3rem;
+  --font-size-small: 2rem;
+  --font-size-semi-small: 1.6rem;
+  --font-size-micro: 1rem;
+  --font-weight-bold: 400;
+  --font-weight-semi-bold: 350;
+  --font-weight-regular: 200;
+  --font-weight-semi-thin: 150;
+  --font-weight-thin: 100;
+}
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  cursor: default;
+  background-color: var(--color-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Typography */
+h1 {
+  font-size: var(--font-size-extra-large);
+  font-weight: var(--font-weight-bold);
+  margin: 0.5rem 0;
+}
+
+h2 {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-thin);
+  margin: 0.25rem 0;
+}
+
+h3 {
+  font-size: var(--font-size-regular);
+  font-weight: var(--font-weight-regular);
+  margin: 0.25rem 0;
+}
+
+h4 {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-semi-thin);
+  margin: 0.25rem 0;
+}
+
+p {
+  font-size: var(--font-size-micro);
+  font-weight: var(--font-weight-thin);
+  margin: 0.25rem 0;
+}
+
+/* Menu */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.4rem;
+  background-color: var(--color-black);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.logo__action {
+  padding: 1rem 2rem;
+  font-size: var(--font-size-semi-small);
+  font-weight: var(--font-weight-thin);
+  color: var(--color-white);
+  width: 8rem;
+  height: 8rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+.menu__action {
+  padding: 1rem 2.8rem;
+  font-size: var(--font-size-semi-small);
+  font-weight: var(--font-weight-thin);
+  color: var(--color-white);
+}
+
+/* Home */
+.home {
+  background-color: var(--color-black);
+  padding: 24rem 5.8rem;
+  color: var(--color-white);
+}
+
+.home__title {
+  display: inline-block;
+  color: var(--color-white);
+  font-size: var(--font-size-extra-extra-large);
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.1rem;
+  text-underline-offset: 1rem;
+}
+
+.home__title:hover {
+}
+
+.home__subtitle {
+  font-size: var(--font-size-large);
+  color: var(--color-light-shade);
+}
+
+.home__description {
+  font-size: var(--font-size-small);
+  color: var(--color-shade);
+}
+
+.home__action {
+  background: var(--color-shade);
+  margin-top: 1.8rem;
+  padding: 1rem 2.4rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  font-size: 2rem;
+  transition-property: all;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.home__action-icon {
+  position: relative;
+  left: 0.8rem;
+  top: 0.1rem;
+}
+
+.home__action:hover {
+  background: var(--color-dark-accent);
+  color: var(--color-white);
+}
+
+/* Career */
+.career {
+  background: linear-gradient(to bottom, var(--color-black), 70%, var(--color-strong-background));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100vw;
+  height: 50vh;
+  color: var(--color-white);
+  padding: 10rem 5.8rem;
+}
+
+.career__emphasis {
+  color: var(--color-primary-accent);
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+  background: linear-gradient(90deg, var(--color-dark-accent), var(--color-light-accent));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.slideshow {
+  position: relative;
+  left: 18rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+}
+
+.slideshow__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(315deg, var(--color-strong-background), var(--color-black));
+  box-shadow: 1rem 1rem 2rem var(--color-black);
+  border-radius: 0.8rem;
+  padding: 4rem;
+  margin: 2.4rem;
+  width: 22rem;
+  height: 22rem;
+}
+
+.slideshow__card-empty {
+  background: linear-gradient(315deg, var(--color-soft-background), var(--color-black));
+  box-shadow: 1rem 1rem 2rem var(--color-black);
+  border-radius: 0.8rem;
+  padding: 10rem;
+  margin: 2.4rem;
+}
+
+.slideshow__card_logo {
+  width: 11rem;
+  height: 11rem;
+}
+
+.slideshow__card_dot {
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: var(--color-soft-background);
+  border-radius: 50%;
+  margin: 0.2rem;
+}
+
+.dot-medium {
+  background-color: var(--color-light-background);
+}
+
+.dot-highlight {
+  background-color: var(--color-extra-light-background);
+}
+
+#nagios-logo {
+  width: 14rem;
+  height: 14rem;
+}
+
+#relevant-logo {
+  width: 7rem;
+  height: 7rem;
+}
