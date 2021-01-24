@@ -13,6 +13,7 @@ const handler = async () => ({ status: 'success'});
 
 async function routes (fastify, options) {
   fastify.get('/post', async (req, res) => {
+    fastify.log.info( fastify.env.PORT );
     return post;
   });
   fastify.post('/post', { schema }, handler);

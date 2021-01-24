@@ -5,14 +5,14 @@ const keys = new Set([process.env.SECRET]);
 
 
 fastify.register(async function publicContext (childServer) {
-  fastify.register(require('./routes/hello-world'));
-  fastify.register(require('./routes/ping'));
+  childServer.register(require('./routes/hello-world'));
+  childServer.register(require('./routes/ping'));
 });
 
 fastify.register(async function authenticatedContext (childServer) {
-  fastify.decorate('env', { ...process.env });
-  fastify.register(require('fastify-bearer-auth'), {keys});
-  fastify.register(require('./routes/post'));
+  childServer.decorate('env', { ...process.env });
+  childServer.register(require('fastify-bearer-auth'), {keys});
+  childServer.register(require('./routes/post'));
 });
 
 (async () => {
