@@ -13,6 +13,7 @@ fastify.register(async function authenticatedContext (childServer) {
   childServer.decorate('env', { ...process.env });
   childServer.register(require('fastify-bearer-auth'), {keys});
   childServer.register(require('./routes/post'));
+  childServer.register(require('./routes/user'));
 });
 
 (async () => {

@@ -1,5 +1,6 @@
-curl -X GET http://localhost:5000/post \
+curl -X GET http://localhost:5000/user \
 -H "Authorization: Bearer c0fa1bc00531bd78ef38c628449c5102aeabd49b5dc3a2a516ea6ea959d6658e" \
+-H "Content-Type: application/json" \
 
 <<C1
 curl -X POST http://localhost:5000/post \
