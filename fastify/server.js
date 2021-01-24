@@ -1,8 +1,8 @@
 require('dotenv').config();
-const fastify = require('fastify')({ logger: {prettyPrint: true} });
-
 const keys = new Set([process.env.SECRET]);
+const isProduction = process.env.NODE_ENV === 'production' || false;
 
+const fastify = require('fastify')({ logger: {prettyPrint: !isProduction} });
 
 fastify.register(async function publicContext (childServer) {
   childServer.register(require('./routes/hello-world'));
