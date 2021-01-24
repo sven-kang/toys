@@ -3,6 +3,8 @@ const fastify = require('fastify')({ logger: true });
 
 const keys = new Set([process.env.SECRET]);
 
+fastify.register(require('./utils/add-numbers'));
+
 fastify.register(async function publicContext (childServer) {
   fastify.register(require('./routes/hello-world'));
   fastify.register(require('./routes/ping'));
