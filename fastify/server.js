@@ -1,8 +1,17 @@
 require('dotenv').config();
 const fastify = require('fastify')({ logger: true });
 
-fastify.register(require('./routes/hello-world'));
-fastify.register(require('./routes/ping'));
+const keys = new Set([process.env.SECRET]);
+
+fastify.register(async function publicContext (childServer) {
+  fastify.register(require('./routes/hello-world'));
+  fastify.register(require('./routes/ping'));
+});
+
+fastify.register(async function authenticatedContext (childServer) {
+  fastify.register(require('fastify-bearer-auth'), {keys});
+  fastify.register(require('./routes/post'));
+});
 
 (async () => {
   try {
