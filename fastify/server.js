@@ -1,8 +1,7 @@
 const fastify = require('fastify')({ logger: true });
 
-fastify.get('/', async (request, reply) => {
-  return { hello: 'world' }
-});
+fastify.register(require('./routes/hello-world'));
+fastify.register(require('./routes/ping'));
 
 (async () => {
   try {
