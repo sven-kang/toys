@@ -1,9 +1,8 @@
 require('dotenv').config();
-const fastify = require('fastify')({ logger: true });
+const fastify = require('fastify')({ logger: {prettyPrint: true} });
 
 const keys = new Set([process.env.SECRET]);
 
-fastify.register(require('./utils/add-numbers'));
 
 fastify.register(async function publicContext (childServer) {
   fastify.register(require('./routes/hello-world'));
@@ -11,6 +10,7 @@ fastify.register(async function publicContext (childServer) {
 });
 
 fastify.register(async function authenticatedContext (childServer) {
+  fastify.decorate('env', { ...process.env });
   fastify.register(require('fastify-bearer-auth'), {keys});
   fastify.register(require('./routes/post'));
 });
