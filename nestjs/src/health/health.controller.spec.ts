@@ -1,8 +1,8 @@
-import { HealthCheckService, HttpHealthIndicator } from '@nestjs/terminus';
-import { Test, TestingModule } from '@nestjs/testing';
-import { HealthController } from './health.controller';
+import { HealthCheckService, HttpHealthIndicator } from "@nestjs/terminus";
+import { Test, TestingModule } from "@nestjs/testing";
+import { HealthController } from "./health.controller";
 
-describe('HealthController', () => {
+describe("HealthController", () => {
   let controller: HealthController;
 
   beforeEach(async () => {
@@ -14,10 +14,9 @@ describe('HealthController', () => {
     controller = module.get<HealthController>(HealthController);
   });
 
-  describe('health', () => {
-    it('should be defined', () => {
+  describe("health", () => {
+    it("should be defined", () => {
       expect(controller).toBeDefined();
     });
   });
-
 });
