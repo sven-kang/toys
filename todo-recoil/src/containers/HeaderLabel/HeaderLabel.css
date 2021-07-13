@@ -1,0 +1,13 @@
+.HeaderLabel {
+  text-align: center;
+  align-items: center;
+  margin-left: 2rem;
+  display: flex;
+}
+
+.HeaderLabel__main {
+}
+
+.HeaderLabel__subtitle {
+
+}
