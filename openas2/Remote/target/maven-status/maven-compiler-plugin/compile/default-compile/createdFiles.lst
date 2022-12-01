@@ -1,0 +1,5 @@
+org/openas2/remote/OpenAS2Servlet$LogGetter.class
+org/openas2/remote/CommandLine.class
+org/openas2/remote/util/ByteCoder.class
+org/openas2/remote/SocketLogging.class
+org/openas2/remote/OpenAS2Servlet.class

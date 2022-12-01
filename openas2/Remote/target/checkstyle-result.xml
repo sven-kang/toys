@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.19">
+<file name="/Users/svenkang/dev/toys/OpenAs2App/Remote/src/main/java/org/openas2/remote/util/ByteCoder.java">
+</file>
+<file name="/Users/svenkang/dev/toys/OpenAs2App/Remote/src/main/java/org/openas2/remote/CommandLine.java">
+</file>
+<file name="/Users/svenkang/dev/toys/OpenAs2App/Remote/src/main/java/org/openas2/remote/SocketLogging.java">
+</file>
+<file name="/Users/svenkang/dev/toys/OpenAs2App/Remote/src/main/java/org/openas2/remote/OpenAS2Servlet.java">
+</file>
+</checkstyle>
