@@ -10,3 +10,4 @@ Fun toy projects meant to be experimental. Be creative, playful and free. These 
 - [iluvcoffee](https://github.com/svenkang/toys/tree/main/iluvcoffee) (nestjs fundamentals course project)
 - [recoiljs](https://github.com/svenkang/toys/tree/main/todo-recoil) (react with recoil as state management)
 - [as2](https://github.com/svenkang/toys/tree/main/openas2) (openas2 server)
+- [hadoop](https://github.com/svenkang/toys/tree/main/hadoop) (cloudera hadoop big data)
