@@ -1,0 +1,29 @@
+version: '3.8'
+networks:
+  next-mongo:
+    driver: bridge
+services:
+  next-ui:
+    build:
+      context: ./
+      target: runner
+    container_name: next-ui
+    networks:
+      - next-mongo
+    volumes:
+      - .:/app
+    command: npm run dev
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
+  next-mongo:
+    image: mongo:latest
+    container_name: next-mongo
+    networks:
+      - next-mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongoadmin
+      - MONGO_INITDB_ROOT_PASSWORD=bdung
+    ports:
+      - '27017:27017'
